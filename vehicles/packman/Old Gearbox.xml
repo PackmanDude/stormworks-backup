@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><vehicle data_version="3"><authors/><bodies><body><components><c d="torque_gearbox_2"><o r="-1,0,0,0,0,-1,0,-1,0" sc="16" gear_ratio_2="1"><vp x="5" y="-8" z="-2"/><logic_slots><slot/><slot/><slot/><slot/></logic_slots></o></c></components></body></bodies><logic_node_links/></vehicle>

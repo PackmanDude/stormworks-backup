@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<microprocessor name="Gear Control" description="." hide_in_inventory="false" width="3" length="2" id_counter="28" id_counter_node="6" transform_index="0" sym0="0" sym1="4676" sym2="4708" sym3="3668" sym4="4692" sym5="4684" sym6="3652" sym7="0" sym8="0" sym9="7736" sym10="528" sym11="1040" sym12="2064" sym13="4632" sym14="3088" sym15="0">
+	<nodes>
+		<n id="1" component_id="1" built_slot_index="0">
+			<node label="-" mode="1" type="0" description="." flags="0">
+				<position x="0" y="0" z="0"/>
+			</node>
+		</n>
+		<n id="2" component_id="2" built_slot_index="0">
+			<node label="+" mode="1" type="0" description="." flags="0">
+				<position x="0" y="0" z="1"/>
+			</node>
+		</n>
+		<n id="3" component_id="7" built_slot_index="0">
+			<node label="N" mode="0" type="0" description="." flags="0">
+				<position x="2" y="0" z="0"/>
+			</node>
+		</n>
+		<n id="4" component_id="8" built_slot_index="0">
+			<node label="1" mode="0" type="0" description="." flags="0">
+				<position x="2" y="0" z="1"/>
+			</node>
+		</n>
+		<n id="5" component_id="9" built_slot_index="0">
+			<node label="2" mode="0" type="0" description="." flags="0">
+				<position x="1" y="0" z="0"/>
+			</node>
+		</n>
+		<n id="6" component_id="10" built_slot_index="0">
+			<node label="R" mode="0" type="0" description="." flags="0">
+				<position x="1" y="0" z="1"/>
+			</node>
+		</n>
+	</nodes>
+	<group id="0">
+		<pos x="0" y="0"/>
+		<data type="1127880337" name="" desc="">
+			<inputs/>
+			<outputs/>
+		</data>
+		<components>
+			<c type="1">
+				<object id="11">
+					<pos x="-2.5" y="1.25"/>
+					<in1 component_id="14" node_index="0" v="false"/>
+					<in2 component_id="2" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="1">
+				<object id="12">
+					<pos x="-2.5" y="0.25"/>
+					<in1 component_id="1" node_index="0" v="false"/>
+					<in2 component_id="13" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="13">
+					<pos x="-2.5" y="-0.5"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="-0.9" value="-0.9"/>
+					<max text="1000" value="1000"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="14">
+					<pos x="-2.5" y="2.25"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="-1000.00" value="-1000"/>
+					<max text="1.90" value="1.9"/>
+				</object>
+			</c>
+			<c type="2">
+				<object id="15">
+					<pos x="-0.25" y="0.75"/>
+					<in1 component_id="11" node_index="0" v="false"/>
+					<in2 component_id="12" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="26">
+				<object id="16" ct="0" dt="0.1" c1="0" c2="0" p="false">
+					<pos x="-0.75" y="2"/>
+					<in1 component_id="2" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="15">
+				<object id="17">
+					<pos x="-0.75" y="2.75"/>
+					<out1 v="0"/>
+					<n text="-1" value="-1"/>
+				</object>
+			</c>
+			<c type="15">
+				<object id="18">
+					<pos x="-0.75" y="3.5"/>
+					<out1 v="0"/>
+					<n text="1" value="1"/>
+				</object>
+			</c>
+			<c type="22">
+				<object id="19">
+					<pos x="1" y="2.5"/>
+					<in1 component_id="18" node_index="0" v="0"/>
+					<in2 component_id="17" node_index="0" v="0"/>
+					<in3 component_id="16" node_index="0" v="false"/>
+					<out1 v="0"/>
+				</object>
+			</c>
+			<c type="6">
+				<object id="20">
+					<pos x="3.25" y="2.75"/>
+					<in1 component_id="19" node_index="0" v="0"/>
+					<in2 component_id="24" node_index="0" v="0"/>
+					<out1 v="0"/>
+				</object>
+			</c>
+			<c type="15">
+				<object id="21">
+					<pos x="1.25" y="0"/>
+					<out1 v="0"/>
+					<n text="2" value="2"/>
+				</object>
+			</c>
+			<c type="49">
+				<object id="22" u="1" t="0">
+					<pos x="1.25" y="0.75"/>
+					<in1 component_id="15" node_index="0" v="false"/>
+					<in2 component_id="21" node_index="0" v="0"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="48">
+				<object id="23" m="1" p="false">
+					<pos x="2.75" y="1"/>
+					<in1 component_id="22" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="13">
+				<object id="24" ir="false">
+					<pos x="4.25" y="1"/>
+					<in1 component_id="23" node_index="0" v="false"/>
+					<in2 component_id="0" node_index="0" v="false"/>
+					<in3 component_id="20" node_index="0" v="0"/>
+					<out1 v="0"/>
+					<r text="0" value="0"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="25">
+					<pos x="4.75" y="0.25"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="1.9" value="1.9"/>
+					<max text="2.1" value="2.1"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="26">
+					<pos x="4.75" y="-0.25"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="0.9" value="0.9"/>
+					<max text="1.1" value="1.1"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="27">
+					<pos x="4.75" y="-0.75"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="-0.1" value="-0.1"/>
+					<max text="0.1" value="0.1"/>
+				</object>
+			</c>
+			<c type="12">
+				<object id="28">
+					<pos x="4.75" y="-1.25"/>
+					<in1 component_id="24" node_index="0" v="0"/>
+					<out1 v="false"/>
+					<min text="-1.1" value="-1.1"/>
+					<max text="-0.9" value="-0.9"/>
+				</object>
+			</c>
+		</components>
+		<components_bridge>
+			<c type="0">
+				<object id="1">
+					<pos x="-4" y="0.5"/>
+					<in1 component_id="0" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="0">
+				<object id="2">
+					<pos x="-4" y="1.25"/>
+					<in1 component_id="0" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="1">
+				<object id="7">
+					<pos x="7" y="-0.25"/>
+					<in1 component_id="27" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="1">
+				<object id="8">
+					<pos x="7" y="0.5"/>
+					<in1 component_id="26" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="1">
+				<object id="9">
+					<pos x="7" y="1.25"/>
+					<in1 component_id="25" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+			<c type="1">
+				<object id="10">
+					<pos x="7" y="-1"/>
+					<in1 component_id="28" node_index="0" v="false"/>
+					<out1 v="false"/>
+				</object>
+			</c>
+		</components_bridge>
+		<groups/>
+		<component_states>
+			<c0 id="11">
+				<pos x="-2.5" y="1.25"/>
+				<in1 component_id="14" node_index="0" v="false"/>
+				<in2 component_id="2" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c0>
+			<c1 id="12">
+				<pos x="-2.5" y="0.25"/>
+				<in1 component_id="1" node_index="0" v="false"/>
+				<in2 component_id="13" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c1>
+			<c2 id="13">
+				<pos x="-2.5" y="-0.5"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="-0.9" value="-0.9"/>
+				<max text="1000" value="1000"/>
+			</c2>
+			<c3 id="14">
+				<pos x="-2.5" y="2.25"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="-1000.00" value="-1000"/>
+				<max text="1.90" value="1.9"/>
+			</c3>
+			<c4 id="15">
+				<pos x="-0.25" y="0.75"/>
+				<in1 component_id="11" node_index="0" v="false"/>
+				<in2 component_id="12" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c4>
+			<c5 id="16" ct="0" dt="0.1" c1="0" c2="0" p="false">
+				<pos x="-0.75" y="2"/>
+				<in1 component_id="2" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c5>
+			<c6 id="17">
+				<pos x="-0.75" y="2.75"/>
+				<out1 v="0"/>
+				<n text="-1" value="-1"/>
+			</c6>
+			<c7 id="18">
+				<pos x="-0.75" y="3.5"/>
+				<out1 v="0"/>
+				<n text="1" value="1"/>
+			</c7>
+			<c8 id="19">
+				<pos x="1" y="2.5"/>
+				<in1 component_id="18" node_index="0" v="0"/>
+				<in2 component_id="17" node_index="0" v="0"/>
+				<in3 component_id="16" node_index="0" v="false"/>
+				<out1 v="0"/>
+			</c8>
+			<c9 id="20">
+				<pos x="3.25" y="2.75"/>
+				<in1 component_id="19" node_index="0" v="0"/>
+				<in2 component_id="24" node_index="0" v="0"/>
+				<out1 v="0"/>
+			</c9>
+			<c10 id="21">
+				<pos x="1.25" y="0"/>
+				<out1 v="0"/>
+				<n text="2" value="2"/>
+			</c10>
+			<c11 id="22" u="1" t="0">
+				<pos x="1.25" y="0.75"/>
+				<in1 component_id="15" node_index="0" v="false"/>
+				<in2 component_id="21" node_index="0" v="0"/>
+				<out1 v="false"/>
+			</c11>
+			<c12 id="23" m="1" p="false">
+				<pos x="2.75" y="1"/>
+				<in1 component_id="22" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c12>
+			<c13 id="24" ir="false">
+				<pos x="4.25" y="1"/>
+				<in1 component_id="23" node_index="0" v="false"/>
+				<in2 component_id="0" node_index="0" v="false"/>
+				<in3 component_id="20" node_index="0" v="0"/>
+				<out1 v="0"/>
+				<r text="0" value="0"/>
+			</c13>
+			<c14 id="25">
+				<pos x="4.75" y="0.25"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="1.9" value="1.9"/>
+				<max text="2.1" value="2.1"/>
+			</c14>
+			<c15 id="26">
+				<pos x="4.75" y="-0.25"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="0.9" value="0.9"/>
+				<max text="1.1" value="1.1"/>
+			</c15>
+			<c16 id="27">
+				<pos x="4.75" y="-0.75"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="-0.1" value="-0.1"/>
+				<max text="0.1" value="0.1"/>
+			</c16>
+			<c17 id="28">
+				<pos x="4.75" y="-1.25"/>
+				<in1 component_id="24" node_index="0" v="0"/>
+				<out1 v="false"/>
+				<min text="-1.1" value="-1.1"/>
+				<max text="-0.9" value="-0.9"/>
+			</c17>
+		</component_states>
+		<component_bridge_states>
+			<c0 id="1">
+				<pos x="-4" y="0.5"/>
+				<in1 component_id="0" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c0>
+			<c1 id="2">
+				<pos x="-4" y="1.25"/>
+				<in1 component_id="0" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c1>
+			<c2 id="7">
+				<pos x="7" y="-0.25"/>
+				<in1 component_id="27" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c2>
+			<c3 id="8">
+				<pos x="7" y="0.5"/>
+				<in1 component_id="26" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c3>
+			<c4 id="9">
+				<pos x="7" y="1.25"/>
+				<in1 component_id="25" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c4>
+			<c5 id="10">
+				<pos x="7" y="-1"/>
+				<in1 component_id="28" node_index="0" v="false"/>
+				<out1 v="false"/>
+			</c5>
+		</component_bridge_states>
+		<group_states/>
+	</group>
+</microprocessor>
+

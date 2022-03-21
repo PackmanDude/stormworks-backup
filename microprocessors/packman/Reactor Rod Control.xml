@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<microprocessor name="Reactor Rod Control" width="2" length="2" id_counter="16" id_counter_node="4" sym1="32766" sym2="16386" sym3="24570" sym4="20490" sym5="22186" sym6="20650" sym7="20522" sym8="21002" sym9="21802" sym10="21034" sym11="20490" sym12="24570" sym13="16386" sym14="32766">
+	<nodes>
+		<n id="1" component_id="1">
+			<node label="Half / Full PWR" mode="1">
+				<position z="1"/>
+			</node>
+		</n>
+		<n id="2" component_id="2">
+			<node label="SCRAM" mode="1">
+				<position x="1" z="1"/>
+			</node>
+		</n>
+		<n id="4" component_id="6">
+			<node label="Output" type="1">
+				<position x="1"/>
+			</node>
+		</n>
+	</nodes>
+	<group>
+		<data>
+			<inputs/>
+			<outputs/>
+		</data>
+		<components>
+			<c type="22">
+				<object id="7">
+					<pos x="0.75" y="-0.25"/>
+					<in1 component_id="13"/>
+					<in2 component_id="8"/>
+					<in3 component_id="2"/>
+					<out1/>
+				</object>
+			</c>
+			<c type="22">
+				<object id="8">
+					<pos x="-0.5" y="-0.5"/>
+					<in1/>
+					<in2 component_id="15"/>
+					<in3 component_id="1"/>
+					<out1/>
+				</object>
+			</c>
+			<c type="15">
+				<object id="13">
+					<pos x="-0.5" y="0.5"/>
+					<out1/>
+					<n text="1" value="1"/>
+				</object>
+			</c>
+			<c type="15">
+				<object id="15">
+					<pos x="-1.75"/>
+					<out1/>
+					<n text="0.5" value="0.5"/>
+				</object>
+			</c>
+		</components>
+		<components_bridge>
+			<c>
+				<object id="1">
+					<pos x="-1.75" y="-0.5"/>
+					<in1/>
+					<out1/>
+				</object>
+			</c>
+			<c>
+				<object id="2">
+					<pos x="-0.5" y="-0.5"/>
+					<in1/>
+					<out1/>
+				</object>
+			</c>
+			<c type="3">
+				<object id="6">
+					<pos x="2"/>
+					<in1 component_id="7"/>
+					<out1/>
+				</object>
+			</c>
+		</components_bridge>
+		<groups/>
+		<component_states>
+			<c0 id="7">
+				<pos x="0.75" y="-0.25"/>
+				<in1 component_id="13"/>
+				<in2 component_id="8"/>
+				<in3 component_id="2"/>
+				<out1/>
+			</c0>
+			<c1 id="8">
+				<pos x="-0.5" y="-0.5"/>
+				<in1/>
+				<in2 component_id="15"/>
+				<in3 component_id="1"/>
+				<out1/>
+			</c1>
+			<c2 id="13">
+				<pos x="-0.5" y="0.5"/>
+				<out1/>
+				<n text="1" value="1"/>
+			</c2>
+			<c3 id="15">
+				<pos x="-1.75"/>
+				<out1/>
+				<n text="0.5" value="0.5"/>
+			</c3>
+		</component_states>
+		<component_bridge_states>
+			<c0 id="1">
+				<pos x="-1.75" y="-0.5"/>
+				<in1/>
+				<out1/>
+			</c0>
+			<c1 id="2">
+				<pos x="-0.5" y="-0.5"/>
+				<in1/>
+				<out1/>
+			</c1>
+			<c2 id="6">
+				<pos x="2"/>
+				<in1 component_id="7"/>
+				<out1/>
+			</c2>
+		</component_bridge_states>
+		<group_states/>
+	</group>
+</microprocessor>
+
