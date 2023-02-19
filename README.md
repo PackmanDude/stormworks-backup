@@ -1,2 +1,3 @@
 # stormworks-backup
-Backup for our Stormworks' builds
+
+Backup of our Stormworks' builds.
